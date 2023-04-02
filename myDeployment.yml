@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: movieproject
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: movieproject
+  template:
+    metadata:
+      labels:
+        app: movieproject
+    spec:
+      containers:
+      - name: movieproject
+        image: robinhosz/movieproject:1.0
+        ports:
+        - containerPort: 8080
+        env:
+        - name: TMDB_API_KEY
+          value: api_key
