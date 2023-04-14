@@ -1,0 +1,12 @@
+br\com\movieproject\MovieProjectApplication.class
+br\com\movieproject\dto\FormDTO.class
+br\com\movieproject\config\AppConfig.class
+br\com\movieproject\dto\MovieDTO.class
+br\com\movieproject\service\FormService.class
+br\com\movieproject\repository\FormRepository.class
+br\com\movieproject\controller\MovieController.class
+br\com\movieproject\model\Form.class
+br\com\movieproject\proxy\TmdbService.class
+br\com\movieproject\controller\FormController.class
+br\com\movieproject\service\MovieService.class
+br\com\movieproject\config\ModelMapperConfig.class
