@@ -13,10 +13,7 @@ spec:
         app: movieproject
     spec:
       containers:
-      - name: movieproject
-        image: robinhosz/movieproject:1.0
-        ports:
-        - containerPort: 8080
-        env:
-        - name: TMDB_API_KEY
-          value: api_key
+        - name: myapp
+          image: robinhosz/movieproject:2.0
+          ports:
+            - containerPort: 8080

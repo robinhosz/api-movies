@@ -1,6 +1,6 @@
 package br.com.movieproject.service;
 
-import br.com.movieproject.model.MovieDTO;
+import br.com.movieproject.dto.MovieDTO;
 import br.com.movieproject.proxy.TmdbService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
