@@ -30,7 +30,7 @@ public class FormController {
     }
 
 
-    @GetMapping
+    @GetMapping("/dados")
     public ResponseEntity<List<FormDTO>> findAll() {
         List<FormDTO> listDTO = service.findAll().stream().map(x -> mapper.map(x, FormDTO.class)).collect(Collectors.toList());
         return ResponseEntity.ok().body(listDTO);
