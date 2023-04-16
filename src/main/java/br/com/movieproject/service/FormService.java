@@ -7,6 +7,8 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class FormService {
 
@@ -19,5 +21,10 @@ public class FormService {
     public Form create(FormDTO obj) {
 
         return repository.save(mapper.map(obj, Form.class));
+    }
+
+    public List<Form> findAll() {
+
+        return repository.findAll();
     }
 }
